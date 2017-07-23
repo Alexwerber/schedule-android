@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.TabLayout android:id="@+id/tablayout"
+    android:background="@color/colorPrimary"
+    app:tabTextColor="@android:color/white"
+    app:tabSelectedTextColor="@android:color/white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.alexwerber.scheduleandroid.MainActivity">
+    android:layout_height="wrap_content"
+    app:tabGravity="fill"
+    app:tabMode="fixed"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
+    <android.support.design.widget.TabItem
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/tab_today"
+        android:layout_weight="1" >
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.TabItem>
+
+    <android.support.design.widget.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tab_tomorrow"
+        android:layout_weight="1" />
+
+    <android.support.design.widget.TabLayout.TabView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Matan" />
+        </LinearLayout>
+    </android.support.design.widget.TabLayout.TabView>
+</android.support.design.widget.TabLayout>
