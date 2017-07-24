@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Расписание</string>
+    <string name="tab_today">Сегодня</string>
+    <string name="tab_tomorrow">Завтра</string>
+    <string name="hello_anime">I LOVE ANIME</string>
+</resources>
